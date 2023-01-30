@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .gronn {
+        color: green;
+    }
+
+    .blaa {
+        color: blue;
+    }
+
+    .rod {
+        color: red;
+    }
+
+</style>
+
+</head>
+<body>
+
+    <h1 id="melding">Hello!!!</h1>
+
+    <ul>
+        <li id="gronn" class="gronn">Grønn</li>
+        <li id="blaa" class="blaa">Blå</li>
+        <li id="rod" class="rod">Rød</li>
+    </ul>
+    
+<script>
+window.onload = oppstart;
+
+function oppstart() {
+    document.getElementById("gronn").onclick = visGronn
+    document.getElementById("blaa").onclick = visBlaa
+    document.getElementById("rod").onclick = visRod
+}
+
+function visGronn() {
+   document.getElementById("melding").className ="gronn"
+}
+
+function visBlaa() {
+   document.getElementById("melding").className ="blaa"
+}
+
+function visRod() {
+   document.getElementById("melding").className ="rod"
+}
+
+
+
+</script>
+
+</body>
+</html>
